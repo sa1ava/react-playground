@@ -1,6 +1,11 @@
 import React from "react";
 
-export default function Instructions({ title, steps }: { title: string, steps: string[] }) {
+type instructionProps = {
+    title: string;
+    steps: string[];
+};
+
+export default function Instructions({ title, steps }: instructionProps) {
     return (
         <section className="instructions">
             <h3>{title}</h3>
